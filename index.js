@@ -43,7 +43,7 @@ function convertRule(input) {
                 }
             }
 			
-			return v[0] + " == " + v[1]; 
+			return 'this.'+ v[0] + " == " + v[1]; 
         },
         not_equal: function(v) {
 
@@ -59,7 +59,7 @@ function convertRule(input) {
                 }
             }
 			
-			return v[0] + " != " + v[1]; 
+			return 'this.'+ v[0] + " != " + v[1]; 
         },
         less: function(v) {
 		
@@ -69,7 +69,7 @@ function convertRule(input) {
                 v[1] = parseFloat(getValue);
             }
 			
-			return v[0] + " < " + v[1];           
+			return 'this.'+ v[0] + " < " + v[1];           
 			
         },
         less_or_equal: function(v) {
@@ -80,7 +80,7 @@ function convertRule(input) {
                 v[1] = parseFloat(getValue);
             }
 			
-			return v[0] + " <= " + v[1]; 
+			return 'this.'+ v[0] + " <= " + v[1]; 
 
         },
         greater: function(v) {
@@ -91,7 +91,7 @@ function convertRule(input) {
                 v[1] = parseFloat(getValue);
             }
 			
-			return v[0] + " > " + v[1]; 
+			return 'this.'+ v[0] + " > " + v[1]; 
 
         },
         greater_or_equal: function(v) {
@@ -102,7 +102,7 @@ function convertRule(input) {
                 v[1] = parseFloat(getValue);
             }
 			
-			return v[0] + " >= " + v[1]; 
+			return 'this.'+ v[0] + " >= " + v[1]; 
 
         }
     }
