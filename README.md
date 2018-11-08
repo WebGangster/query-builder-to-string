@@ -148,6 +148,8 @@ var rule = {
 R.register(rule);
 ```
 
+Here is a runkit example: https://runkit.com/aravindnc/query-builder-to-string
+
 Reference for JSON rules for Node Rules,
 - https://www.npmjs.com/package/node-rules
 
