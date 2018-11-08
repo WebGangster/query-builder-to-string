@@ -1,6 +1,6 @@
 {
   "name": "query-builder-to-string",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This is a simple library to convert rules created from jQuery Query Builder to String Format",
   "main": "index.js",
   "scripts": {
