@@ -1,0 +1,39 @@
+{
+  "name": "query-builder-to-string",
+  "version": "0.0.1",
+  "description": "This is a simple library to convert rules created from jQuery Query Builder to String Format",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aravindnc/query-builder-to-string.git"
+  },
+  "keywords": [
+    "node",
+    "rules",
+    "engine",
+    "jquery",
+    "querybuilder",
+    "query",
+    "builder",
+    "rulesengine",
+    "rules",
+    "engine",
+    "query",
+    "builder",
+    "converter"
+  ],
+  "author": "= <=> (=)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aravindnc/query-builder-to-string/issues"
+  },
+  "homepage": "https://github.com/aravindnc/query-builder-to-string#readme",
+  "readme": "README.md",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.5"
+  }
+}
