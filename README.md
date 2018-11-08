@@ -1,21 +1,19 @@
-# [durable-rule-converter](https://github.com/aravindnc/durable-rule-converter)
+# [query-builder-to-string](https://github.com/aravindnc/query-builder-to-string)
 
-This is a simple library to convert rules created from jQuery Query Builder to Durables Rules Engine
+This is a simple library to convert rules created from jQuery Query Builder to String Format
 
 Dependencies
 - jQuery Query Builder - http://querybuilder.js.org
-- Durables Rules Engine - https://github.com/jruizgit/rules
+- Node Rules Engine - https://github.com/mithunsatheesh/node-rules
 
 ## Installation
 
-  `npm install durable-rule-converter`
+  `npm install query-builder-to-string`
 
 ## Create Rule using Query Builder
 
 ### Step 1 - Create rule
-Navigate to https://querybuilder.js.org/demo.html for a demo or implement a rule builder using query builder. A sample of query builder is given below.
-
-![Query Builder Demo](https://github.com/aravindnc/durable-rule-converter/blob/master/docs/img/query-builder-demo.png)
+Navigate to https://querybuilder.js.org/demo.html for a demo or implement a rule builder using query builder. 
 
 ### Step 2 - Get the rule output
 After creating your rule, click the 'Get Rules' button and you will get below JSON as the output. You can use your own custom implementation to get the output from query builder.
@@ -71,7 +69,7 @@ The output form Query Builder will be like below,
 So, we have the query builder input and now we are going to convert it to a rule defenition which is the input for durable rules engine.
 
 ```javascript
-    const RuleConverter = require('durable-rule-converter');
+    const RuleConverter = require('query-builder-to-string');
 
     // output from jQuery Query Builder
     var ruleInput = {
@@ -123,10 +121,10 @@ So, we have the query builder input and now we are going to convert it to a rule
 ```
 And the output will be string,
 ```javascript
-   (price < 10.25 && (category == 2 || category == 1 || (in_stock == 1)))
+   // "price < 10.25 && (category == 2 || category == 1 || (in_stock == 1))"
 ```
 
-You can use the above definition in durable rules engine like below JSON format,
+You can use the above definition in node rules engine like below format,
 ```javascript
     var RuleEngine = require("node-rules");
  
